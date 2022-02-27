@@ -133,6 +133,7 @@ class MenuTableViewController: UITableViewController {
         let menuItem = menuItems[indexPath.row]
         cell.textLabel?.text = menuItem.name
         cell.detailTextLabel?.text = MenuItem.priceFormatter.string(from: NSNumber(value: menuItem.price))
+        cell.imageView?.image = UIImage(systemName: "photo")
     }
 
 func updateUI(with menuItems: [MenuItem]) {
